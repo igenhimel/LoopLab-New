@@ -57,12 +57,41 @@ body {
     filter: blur(5px);
     transition: 1s ease all; }
 
-#explore-details .fa-check {
+#explore-details .fa-check, #share-details .fa-check {
   font-size: 30px;
   background-color: #333;
   color: white;
   padding: 4px;
   border-radius: 4px; }
+
+#create-details {
+  background-color: #333; }
+  #create-details .fa-check {
+    font-size: 30px;
+    background-color: white;
+    color: #008ed6;
+    padding: 4px;
+    border-radius: 4px; }
+
+#m-con {
+  background: #333; }
+
+.magic {
+  font-size: 15px !important; }
+
+.name, .email, .text {
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid white;
+  border-radius: 0px; }
+
+.name:focus, .email:focus, .text:focus {
+  box-shadow: none !important;
+  background: transparent; }
+
+.transition-modal {
+  transition: 0.6s;
+  font-size: 25px; }
 
 @media only screen and (max-width: 1200px) {
   .font-title {
