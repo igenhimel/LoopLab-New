@@ -36,6 +36,15 @@ $(document).ready(function () {
     $('.text').siblings().removeClass("magic");
       
   });
+  
+  $(".owl-carousel").owlCarousel({
+    items:1,
+    autoplay:true,
+    autoplaySpeed:600,
+    lazyLoad: true,
+    loop:true
+  });
+
 
 });
 

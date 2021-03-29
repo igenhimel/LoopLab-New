@@ -31,7 +31,7 @@ body {
   min-height: 600px;
   overflow: hidden; }
   #registration .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     min-height: 600px; }
   #registration .reg-inner {
     padding-top: 150px;
@@ -57,6 +57,9 @@ body {
     filter: blur(5px);
     transition: 1s ease all; }
 
+#Explores {
+  overflow: hidden; }
+
 #explore-details .fa-check, #share-details .fa-check {
   font-size: 30px;
   background-color: #333;
@@ -74,15 +77,18 @@ body {
     border-radius: 4px; }
 
 #m-con {
-  background: #333; }
+  background: transparent; }
+  #m-con .modal-overlay {
+    background: rgba(33, 37, 41, 0.5); }
 
 .magic {
-  font-size: 15px !important; }
+  transform: scale(0.5) !important;
+  color: aqua !important; }
 
 .name, .email, .text {
   background: transparent;
   border: 0px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
   border-radius: 0px; }
 
 .name:focus, .email:focus, .text:focus {
@@ -91,7 +97,21 @@ body {
 
 .transition-modal {
   transition: 0.6s;
-  font-size: 25px; }
+  transform: scale(1); }
+
+.colorChange {
+  color: red !important; }
+
+.s2 {
+  position: relative;
+  text-align: center; }
+
+/* Bottom left text */
+.contentinslider {
+  position: absolute;
+  top: 60%;
+  margin: auto;
+  color: black; }
 
 @media only screen and (max-width: 1200px) {
   .font-title {
